@@ -1,9 +1,5 @@
 # Jenkins_CICD
  ![](images/CICD_DevOps.png)
-## DevOps Culture and CICD
-**What is DevOps**
-- DevOps is a culture that bridges the gabp between development and operation teams
-- DevOps market is booming right now
 ## Tools to build a very basic and exciting pipleine using Docker and Jenkins
 **What is Docker**
 - Docker takes away repetitive, mundane configuration tasks and is used throughout the development lifecycle for fast, easy and portable application development - desktop and cloud. Docker’s comprehensive end to end platform includes UIs, CLIs, APIs and security that are engineered to work together across the entire application delivery lifecycle.
@@ -30,10 +26,10 @@ Pipelines leverage the power of multiple steps to execute both simple and comple
 ![](images/jenkins-workflow.png)
 
 
-Jenkins pipeline step by step
-Step 1 — How to create a Jenkins job —
-Step 2 — How to build a pipeline in Jenkins
-Step 3 — How to link the jobs
+## Jenkins pipeline step by step
+- **Step 1** — How to create a Jenkins job —
+- **Step 2** — How to build a pipeline in Jenkins
+- **Step 3** — How to link the jobs
 
 **Prerequisites: Jenkins and Docker should be installed on your system**
 
@@ -48,22 +44,29 @@ Open your browser and type www.localhost:8080
 If port 8080 is already in use then use java -jar jenkins.war –-httpPort=7070
 (you can specify any other port number).
 Login to your account:
+
 ![](images/J_login.png)
 
 **Click on New Item**
 ![](images/new_item.png)
+
 **Enter name as Job1 (you can choose any name you wish)**
 ![](images/new_job.png)
+
 select **freestyle project** then click OK
 **Repeat these steps to create to 2 more jobs with names Job2 and Job3**
+
 click on **dashboard**
 Your dashboard should look like this
 
 Now click on **Job1**
 Click on **Configure** on the left menu
+
 ![](.png)
+
 click on **add build step**
 ![](.png)
+
 Select **Execute shell**
 ![](.png)
 Enter this command: **date**
@@ -103,6 +106,7 @@ To see the outcome of Job1 click on **console output**
 Job1 has been successfully completed and it automatically triggered Job2
 Click on Job2 on the above screen on your system then click on down arrow underneath **build history** and select **Console output**
 ![](images/.png)
+
 Job2 output will pull the image from Docker hub repository as below
 ![](images/.png)
 
