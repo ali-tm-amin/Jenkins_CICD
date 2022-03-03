@@ -89,7 +89,7 @@ click on **Job3** then click on **Configure**
 click on **Add build step** and select **Execute shell**
 ![](images/build.png)
 
-Enter this command: **sudo docker pull yourname/Enter this command: sudo docker pull**
+Enter this command: **sudo docker run yourname/jenkins:v1**
 ![](images/.png)
 
 Click **apply** and **save**.
